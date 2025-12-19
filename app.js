@@ -73,6 +73,24 @@ app.get('/store', (req, res) => {
   });
 });
 
+app.get('/login', (req, res) => {
+    state={login : true}
+    head={title:"login"}
+    // allow optional prefill (e.g., after submission)
+    const formDetails = {
+      userEmail: req.query.userEmail || '',
+      userPassword: req.query.userPassword || ''
+    };
+    res.render('login', { state, head, formDetails });
+    console.log('login')
+  });
+
+  app.get('/signup', (req, res) => {
+    state={signup : true}
+    head={title:"signup"}
+    res.render('signup', { state, head});
+    console.log('signup')
+  });
 
 // Start the server
 app.listen(3000, () => {
