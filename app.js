@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
   state={'home' : true, contact : false}
   // set specifics for <head>
   head={'title': "HomePage"}
-  res.render('index', {state:state, head:head});
+  res.render('home', {state:state, head:head});
   // send this to terminal where node app is running
   console.log('home')
 
