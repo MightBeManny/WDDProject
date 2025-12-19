@@ -10,3 +10,21 @@ body{
 .site-logo{
   height:50px;
 }
+
+.hero-section{
+  background: rgba(0,0,0,0.55);
+}
+
+.highlight-text{
+  color:#f28c28;
+}
+
+.primary-button{
+  background:#f28c28;
+  border:none;
+  font-weight:bold;
+}
+
+.primary-button:hover{
+  background:#e07a12;
+}
