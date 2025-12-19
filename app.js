@@ -64,6 +64,16 @@ app.get('/store', (req, res) => {
     console.log('contact')
   });
 
+  app.post("/contact", (req, res) => {
+  // You can console.log(req.body) here later if you want
+  res.render("contact", {
+    title: "Contact | SportsEvent",
+    year: new Date().getFullYear(),
+    successMessage: "Thanks! Your message has been sent."
+  });
+});
+
+
 // Start the server
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
