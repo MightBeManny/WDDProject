@@ -3,3 +3,10 @@ body{
   font-family: Arial, sans-serif;
   background: url("/images/WebsiteBGD.png") center/cover no-repeat fixed;
 }
+
+.main-navbar{
+  background: rgba(0,0,0,0.45);
+}
+.site-logo{
+  height:35px;
+}
