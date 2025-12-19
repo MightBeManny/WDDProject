@@ -31,7 +31,7 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
 
   // set active or not for navigation
-  state={'home' : true, contact : false}
+  state={'home' : true, about : false}
   // set specifics for <head>
   head={'title': "HomePage"}
   res.render('home', {state:state, head:head});
@@ -39,6 +39,30 @@ app.get('/', (req, res) => {
   console.log('home')
 
 });
+
+//About Us Page
+app.get('/about', (req, res) => {
+    state={'home' : false, about : true}
+    head={'title': "About Us"}
+    res.render('about', { state:state, head:head});
+    console.log('about')
+  });
+
+  //Shop Page
+app.get('/store', (req, res) => {
+    state={'home' : false, store : true}
+    head={'title': "The Store"}
+    res.render('store', { state:state, head:head});
+    console.log('store')
+  });
+
+  //Contact Us Page
+  app.get('/contact', (req, res) => {
+    state={'home' : false, contact : true}
+    head={'title': "Contact Us"}
+    res.render('contact', { state:state, head:head});
+    console.log('contact')
+  });
 
 // Start the server
 app.listen(3000, () => {
