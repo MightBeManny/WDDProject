@@ -1,5 +1,5 @@
 <section class="page-section">
-  <div class="container py-5">
+  <div class="container py-7">
  <div class="page-header mb-4">
       <h1 class="text-white fw-bold mb-2">Contact Us</h1>
       <p class="text-white-50 mb-0">
@@ -7,7 +7,66 @@
       </p>
     </div>
 
-    <div class="row g-4">
-          <div class="col-lg-7">
+    <div class="row g-5">
+          <div class="col-lg-13">
         <div class="content-panel p-4 p-md-5">
           <h3 class="text-white fw-semibold mb-3">Send a Message</h3>
+
+           <form action="/contact" method="POST">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label text-white-50">Full Name</label>
+                <input type="text" name="name" class="form-control search-input" placeholder="Your name" required>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label text-white-50">Email</label>
+                <input type="email" name="email" class="form-control search-input" placeholder="you@example.com" required>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label text-white-50">Subject</label>
+                <input type="text" name="subject" class="form-control search-input" placeholder="Booking issue / Question" required>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label text-white-50">Message</label>
+                <textarea name="message" rows="5" class="form-control search-input" placeholder="Type your message..." required></textarea>
+              </div>
+
+              <div class="col-12 d-grid">
+                <button type="submit" class="btn primary-button">Send Message</button>
+              </div>
+            </div>
+          </form>
+          
+          <div class="col-lg-13">
+        <div class="content-panel p-4 h-100">
+
+          <h3 class="text-white fw-semibold mb-3">Contact Details</h3>
+
+          <div class="contact-info-item">
+            <div class="text-white fw-semibold">Email</div>
+            <div class="text-white-50">support@sportseventbooking.com</div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="text-white fw-semibold">Phone</div>
+            <div class="text-white-50">+353 00 000 0000</div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="text-white fw-semibold">Location</div>
+            <div class="text-white-50">Sligo, Ireland</div>
+          </div>
+
+          <hr class="border-light opacity-25">
+
+          <h3 class="text-white fw-semibold mb-3">Find Us</h3>
+        </div>
+    </div>
+    <div class="map-box">
+            <div class="text-white-50 small">
+            <div style="width: 100%"><iframe width="100%" height="220px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=ATU%20Sligo+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.mapsdirections.info/de/evolkerung-auf-einer-karte-berechnen/"></a></iframe></div>
+    </div>
+</div>
